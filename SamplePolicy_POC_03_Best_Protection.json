@@ -1,0 +1,1046 @@
+{
+  "directoryActionRules": [], 
+  "knownBadHashAutoDeleteDelayMs": 86400000, 
+  "sensorSettings": [
+    {
+      "name": "ALLOW_UNINSTALL", 
+      "value": "true"
+    }, 
+    {
+      "name": "SHOW_UI", 
+      "value": "true"
+    }, 
+    {
+      "name": "ENABLE_THREAT_SHARING", 
+      "value": "true"
+    }, 
+    {
+      "name": "QUARANTINE_DEVICE", 
+      "value": "false"
+    }, 
+    {
+      "name": "LOGGING_LEVEL", 
+      "value": "false"
+    }, 
+    {
+      "name": "QUARANTINE_DEVICE_MESSAGE", 
+      "value": "Your device has been quarantined. Please contact your administrator."
+    }, 
+    {
+      "name": "SET_SENSOR_MODE", 
+      "value": "0"
+    }, 
+    {
+      "name": "SENSOR_RESET", 
+      "value": "0"
+    }, 
+    {
+      "name": "BACKGROUND_SCAN", 
+      "value": "true"
+    }, 
+    {
+      "name": "POLICY_ACTION_OVERRIDE", 
+      "value": "true"
+    }, 
+    {
+      "name": "HELP_MESSAGE", 
+      "value": "Best Protection 1.0"
+    }, 
+    {
+      "name": "PRESERVE_SYSTEM_MEMORY_SCAN", 
+      "value": "false"
+    }, 
+    {
+      "name": "HASH_MD5", 
+      "value": "false"
+    }, 
+    {
+      "name": "SCAN_LARGE_FILE_READ", 
+      "value": "false"
+    }, 
+    {
+      "name": "SCAN_EXECUTE_ON_NETWORK_DRIVE", 
+      "value": "true"
+    }, 
+    {
+      "name": "DELAY_EXECUTE", 
+      "value": "true"
+    }, 
+    {
+      "name": "SCAN_NETWORK_DRIVE", 
+      "value": "false"
+    }, 
+    {
+      "name": "BYPASS_AFTER_LOGIN_MINS", 
+      "value": "0"
+    }, 
+    {
+      "name": "BYPASS_AFTER_RESTART_MINS", 
+      "value": "0"
+    }, 
+    {
+      "name": "SHOW_FULL_UI", 
+      "value": "false"
+    }, 
+    {
+      "name": "SECURITY_CENTER_OPT", 
+      "value": "true"
+    }, 
+    {
+      "name": "CB_LIVE_RESPONSE", 
+      "value": "true"
+    }, 
+    {
+      "name": "UNINSTALL_CODE", 
+      "value": "true"
+    }, 
+    {
+      "name": "UBS_OPT_IN", 
+      "value": "true"
+    }, 
+    {
+      "name": "ALLOW_UPLOADS", 
+      "value": "true"
+    }
+  ], 
+  "rules": [
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "KNOWN_MALWARE"
+      }, 
+      "operation": "RUN", 
+      "required": false, 
+      "id": 3394
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "COMPANY_BLACK_LIST"
+      }, 
+      "operation": "RUN", 
+      "required": false, 
+      "id": 3395
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "SUSPECT_MALWARE"
+      }, 
+      "operation": "RUN", 
+      "required": false, 
+      "id": 3396
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "PUP"
+      }, 
+      "operation": "RUN", 
+      "required": false, 
+      "id": 3397
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "RESOLVING"
+      }, 
+      "operation": "NETWORK", 
+      "required": false, 
+      "id": 3398
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "RESOLVING"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3399
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "RESOLVING"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3400
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "RESOLVING"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3402
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "RESOLVING"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3403
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "RESOLVING"
+      }, 
+      "operation": "RANSOM", 
+      "required": false, 
+      "id": 3404
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "RESOLVING"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3405
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "ADAPTIVE_WHITE_LIST"
+      }, 
+      "operation": "NETWORK", 
+      "required": false, 
+      "id": 3406
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "ADAPTIVE_WHITE_LIST"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3407
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "ADAPTIVE_WHITE_LIST"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3408
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "ADAPTIVE_WHITE_LIST"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3410
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "ADAPTIVE_WHITE_LIST"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3411
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "ADAPTIVE_WHITE_LIST"
+      }, 
+      "operation": "RANSOM", 
+      "required": false, 
+      "id": 3412
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "REPUTATION", 
+        "value": "ADAPTIVE_WHITE_LIST"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3413
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**"
+      }, 
+      "operation": "RANSOM", 
+      "required": false, 
+      "id": 3414
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\chrome.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3415
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\firefox.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3416
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\chrome.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3417
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\firefox.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3419
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\chrome.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3421
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\firefox.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3422
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\javaw.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3423
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\regsvr32.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3424
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\rundll32.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3425
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\mshta.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3426
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\msbuild.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3427
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\java.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3428
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\javaw.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3429
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\regsvr32.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3430
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\rundll32.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3431
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\mshta.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3432
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\msbuild.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3433
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\java.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3434
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\system32\\notepad.exe"
+      }, 
+      "operation": "NETWORK", 
+      "required": false, 
+      "id": 3435
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\eqnedt32.exe"
+      }, 
+      "operation": "NETWORK", 
+      "required": false, 
+      "id": 3436
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\system32\\calc.exe"
+      }, 
+      "operation": "NETWORK", 
+      "required": false, 
+      "id": 3437
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\system32\\mspaint.exe"
+      }, 
+      "operation": "NETWORK", 
+      "required": false, 
+      "id": 3438
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\certutil.exe"
+      }, 
+      "operation": "NETWORK", 
+      "required": false, 
+      "id": 3439
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\pwsh.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3440
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\cscript.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3441
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\browser_broker.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3442
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\wscript.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3443
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\iexplore.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3444
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powershell*.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3445
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\pwsh.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3446
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\cscript.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3448
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\browser_broker.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3450
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\wscript.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3452
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\iexplore.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3454
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powershell*.exe"
+      }, 
+      "operation": "RUN_INMEMORY_CODE", 
+      "required": false, 
+      "id": 3456
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\pwsh.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3458
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\cscript.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3459
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\browser_broker.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3460
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\wscript.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3461
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\iexplore.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3462
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powershell*.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3463
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\pwsh.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3464
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\cscript.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3465
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\browser_broker.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3466
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\wscript.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3467
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\iexplore.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3468
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powershell*.exe"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3469
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\pwsh.exe"
+      }, 
+      "operation": "INVOKE_SCRIPT", 
+      "required": false, 
+      "id": 3470
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\cscript.exe"
+      }, 
+      "operation": "INVOKE_SCRIPT", 
+      "required": false, 
+      "id": 3471
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\browser_broker.exe"
+      }, 
+      "operation": "INVOKE_SCRIPT", 
+      "required": false, 
+      "id": 3472
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\wscript.exe"
+      }, 
+      "operation": "INVOKE_SCRIPT", 
+      "required": false, 
+      "id": 3473
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\iexplore.exe"
+      }, 
+      "operation": "INVOKE_SCRIPT", 
+      "required": false, 
+      "id": 3474
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powershell*.exe"
+      }, 
+      "operation": "INVOKE_SCRIPT", 
+      "required": false, 
+      "id": 3475
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\pwsh.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3476
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\cscript.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3477
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\browser_broker.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3478
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\wscript.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3479
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\iexplore.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3480
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powershell*.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3481
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\excel.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3482
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powerpnt.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3483
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\winword.exe"
+      }, 
+      "operation": "MEMORY_SCRAPE", 
+      "required": false, 
+      "id": 3484
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\excel.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3485
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powerpnt.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3486
+    }, 
+    {
+      "action": "DENY", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\winword.exe"
+      }, 
+      "operation": "POL_INVOKE_NOT_TRUSTED", 
+      "required": false, 
+      "id": 3487
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\excel.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3488
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\powerpnt.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3489
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\winword.exe"
+      }, 
+      "operation": "CODE_INJECTION", 
+      "required": false, 
+      "id": 3490
+    }, 
+    {
+      "action": "TERMINATE", 
+      "application": {
+        "type": "NAME_PATH", 
+        "value": "**\\Microsoft Office\\**"
+      }, 
+      "operation": "INVOKE_CMD_INTERPRETER", 
+      "required": false, 
+      "id": 3491
+    }
+  ], 
+  "avSettings": {
+    "features": [
+      {
+        "enabled": true, 
+        "name": "SIGNATURE_UPDATE"
+      }, 
+      {
+        "enabled": true, 
+        "name": "ONACCESS_SCAN"
+      }, 
+      {
+        "enabled": false, 
+        "name": "ONDEMAND_SCAN"
+      }
+    ], 
+    "updateServers": {
+      "serversForOffSiteDevices": [
+        "http://updates2.cdc.carbonblack.io/update2"
+      ], 
+      "servers": [
+        {
+          "regId": null, 
+          "flags": 0, 
+          "server": [
+            "http://updates2.cdc.carbonblack.io/update2"
+          ]
+        }
+      ]
+    }, 
+    "onDemandScan": {
+      "profile": "NORMAL", 
+      "scanUsb": "AUTOSCAN", 
+      "scanCdDvd": "AUTOSCAN", 
+      "schedule": {
+        "recoveryScanIfMissed": true, 
+        "days": null, 
+        "rangeHours": 0, 
+        "startHour": 0
+      }
+    }, 
+    "onAccessScan": {
+      "profile": "AGGRESSIVE"
+    }, 
+    "apc": {
+      "maxFileSize": 4, 
+      "riskLevel": 4, 
+      "maxExeDelay": 45, 
+      "enabled": false
+    }, 
+    "signatureUpdate": {
+      "schedule": {
+        "initialRandomDelayHours": 1, 
+        "fullIntervalHours": 0, 
+        "intervalHours": 2
+      }
+    }
+  }, 
+  "id": -1
+}
