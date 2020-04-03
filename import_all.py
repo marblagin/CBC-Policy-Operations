@@ -35,7 +35,7 @@ def policy_ops(id, key):
         "SamplePolicy_POC_01_Good_Protection.json",
         "SamplePolicy_POC_02_Better_Protection.json",
         "SamplePolicy_POC_03_Best_Protection.json",
-        "SamplePolicy_POC_04_Win-POC-Restrictive_Protection.json",
+        "SamplePolicy_POC_04_Win-POC-Restrictive-Policy.json",
         "SamplePolicy_POC_05_MacOS-POC-Basic.json",
         "SamplePolicy_POC_06_MacOS-POC-Advanced.json"
     ]
