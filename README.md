@@ -1,5 +1,9 @@
 # CBC-Policy-Operations
 
+Prod06 Examples Only
+
+To import all policy, run import_all.py
+
 Usage:
 
 Import:
